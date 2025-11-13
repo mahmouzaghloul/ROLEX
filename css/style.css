@@ -1,0 +1,149 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap");
+
+/* =================== start  All element =================== */
+/* #region All element*/
+:root {
+  --first-color: #ffb568;
+  --button-color: #2b2b2b;
+  --first-color-action-alt: #363636;
+  --title-color: #2e2e2e;
+  --text-color: #595959;
+  --text-color-light: #8c8c8c;
+  --body-color: #fcfcfc;
+  --container-color: #ffffff;
+  --border-color: #f0f0f0;
+  --first-color-dark: #efbe8a;
+  --first-color-action-dark: #3d3d3d;
+  --title-color-dark: #f2f2f2;
+  --text-color-dark: #bfbfbf;
+  --body-color-dark: #1f1f1f;
+  --container-color-dark: #292929;
+  --border-color-dark: #333333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/* #endregion  All element*/
+/* =================== end All element=================== */
+
+/* =================== start header =================== */
+/* #region header*/
+header {
+  height: 100vh;
+  position: relative;
+}
+/* #region navbar*/
+.navbar {
+  height: 60px;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to right,
+    #fcfcfc 0%,
+    #fcfcfc 30%,
+    #ffb568 30%,
+    #ffb568 100%
+  );
+}
+.logo {
+  width: 80px;
+}
+.navbar_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+}
+.navbar_nav li a {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-color);
+  font-size: 24px;
+}
+.navbar_nav li .active {
+  font-family: "Roboto", sans-serif;
+  color: var(--first-color);
+}
+.wrapper-mood-shopping-controls_navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mood,
+.controls_navbar {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.light_mood,
+.dark_mood,
+.fa-border-all,
+.fa-xmark {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0;
+}
+.active_opct {
+  opacity: 1;
+}
+.fa-xmark {
+  z-index: 999;
+}
+
+/* #endregion navbar*/
+
+/* #region hero section*/
+.hero_section {
+  height: calc(100vh - 60px);
+}
+.soshal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  position: fixed;
+  top: 25%;
+  left: -70px;
+}
+.soshal a {
+    color: var(--text-color-light);
+}
+.soshal a {
+    color: var(--text-color-light);
+      font-family: "Roboto", sans-serif;
+}
+.img_hero{
+    width: 70%;
+    height: 50%;
+    float: right;
+}
+/* #endregion hero section*/
+
+/* #endregion header*/
+/* =================== end header =================== */
